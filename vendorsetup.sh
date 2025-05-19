@@ -80,7 +80,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	# dm-verity/forced-encryption
 	export OF_KEEP_DM_VERITY=1
    	export OF_DONT_PATCH_ENCRYPTED_DEVICE=1
-	export OF_DEFAULT_KEYMASTER_VERSION=4.0
+	export OF_DEFAULT_KEYMASTER_VERSION=3.0
 
 	# run a process after formatting data to work-around MTP issues
 	export OF_RUN_POST_FORMAT_PROCESS=1
@@ -92,7 +92,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	export FOX_ENABLE_APP_MANAGER=1
 
 	# Versioning
- 	export FOX_VARIANT="rev8k4"
+ 	export FOX_VARIANT="rev12"
   	export FOX_BUILD_TYPE="experimental"
 	export OF_MAINTAINER="Nova Moon"
 
